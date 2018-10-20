@@ -23,7 +23,7 @@ public class TcpPingRunner {
         logger.info("Started in mode: " + mode);
         if (mode == Mode.ERROR) {
             System.out.println("No correct command line arguments found.\n " +
-                    "Use '-p -port <port> -mps <rate> -size <size> -h <hostname>' for pitcher or '-c -p <port> -bind <IP address>' for catcher");
+                    "Use '-p -port <port> -mps <rate> -size <size> -hostname <hostname>' for pitcher or '-c -port <port> -bind <IP address>' for catcher");
             System.exit(1);
         }
 

@@ -104,10 +104,10 @@ public final class Pitcher implements TcpPing {
             if (reportTicker.get()) {
                 reportTicker.compareAndSet(true, false);
                 String statistics = "Current time: " + new Date() + " total messages sent: " + sent + " speed:" + speed +"\n"
-                        + " Max A-B-A time: " + maxAbaTime
-                        + " Average A-B time: " + abAverage
-                        + " Average B-A time: " + baAverage
-                        + " Average A-B-A time: " + abaAverage;
+                        + " Max A-B-A time: " + maxAbaTime + " ms"
+                        + " Average A-B time: " + abAverage + " ms"
+                        + " Average B-A time: " + baAverage + " ms"
+                        + " Average A-B-A time: " + abaAverage + " ms";
                 logger.info(statistics);
                 System.out.println(statistics);
                 speed = 0;
