@@ -67,8 +67,12 @@ public final class Message {
         return content;
     }
 
-    @Override
-    public String toString() {
+    /**
+     * Transfer Message object into raw string.
+     *
+     * @return raw message.
+     */
+    public String toRawMessage() {
         return String.format("%010d#", number)
                 + String.format("%015d#", creationTime)
                 + ((replyTime < 0) ? "               #" : String.format("%015d#", replyTime))

@@ -9,7 +9,7 @@ import org.apache.log4j.Logger;
 /**
  * Helper class.
  */
-public class TcpPingHelper {
+public final class TcpPingHelper {
 
     final static Logger logger = Logger.getLogger(TcpPingHelper.class);
 

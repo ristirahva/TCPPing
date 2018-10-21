@@ -21,7 +21,7 @@ public class MessageTest {
     @Test
     public void testToString() {
         Message message = new Message(1234, 1234567890123L, "message text");
-        assertEquals(clientStringMessage, message.toString());
+        assertEquals(clientStringMessage, message.toRawMessage());
     }
 
     @Test

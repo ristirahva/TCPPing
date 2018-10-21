@@ -79,7 +79,7 @@ public final class Catcher implements TcpPing {
             logger.debug("Received: " + clientMessage);
             Message message = new Message(clientMessage);
             message.setReplyTime(System.currentTimeMillis());
-            String reply = message.toString();
+            String reply = message.toRawMessage();
             logger.debug("Sent: " + reply);
             output.writeBytes(reply + "\n");
             connectionSocket.close();

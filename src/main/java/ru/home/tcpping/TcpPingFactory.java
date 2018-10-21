@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * Factory for both Pitcher and Catcher.
  */
-public class TcpPingFactory {
+public final class TcpPingFactory {
 
     /**
      * Create Pitcher or Catcher object.

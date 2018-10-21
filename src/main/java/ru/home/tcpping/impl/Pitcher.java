@@ -79,8 +79,8 @@ public final class Pitcher implements TcpPing {
             input = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             output = new DataOutputStream(clientSocket.getOutputStream());
             outputMessage = createMessage(sent, size);
-            logger.debug("TO SERVER: " + outputMessage.toString());
-            output.writeBytes(outputMessage.toString() + '\n');
+            logger.debug("TO SERVER: " + outputMessage.toRawMessage());
+            output.writeBytes(outputMessage.toRawMessage() + '\n');
 
             ++sent;
             ++speed;
